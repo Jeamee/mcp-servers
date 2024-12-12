@@ -1,0 +1,187 @@
+[
+    {
+        "id": "brave-search",
+        "title": "Brave Search",
+        "description": "Integrates the Brave Search API, providing both web and local search capabilities. Features include web search with pagination and filtering, local search for businesses and services, flexible filtering options, and smart fallbacks.",
+        "tags": [
+            "web search",
+            "local search"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/brave-search.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-brave-search"
+            ],
+            "env": {
+                "BRAVE_API_KEY": "YOUR_API_KEY_HERE"
+            }
+        }
+    },
+    {
+        "id": "puppeteer",
+        "title": "Puppeteer",
+        "description": "Provides browser automation capabilities using Puppeteer. This server enables LLMs to interact with web pages, take screenshots, and execute JavaScript in a real browser environment.",
+        "tags": [
+            "browser automation",
+            "web scraping"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/puppeteer.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-puppeteer"
+            ]
+        }
+    },
+    {
+        "id": "fetch",
+        "title": "Fetch Webpage",
+        "description": "Enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.",
+        "tags": [
+            "web scraping"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/fetch.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-fetch"
+            ]
+        }
+    },
+    {
+        "id": "everart",
+        "title": "EverArt",
+        "description": "Image generation server for Claude Desktop using EverArt's API.",
+        "tags": [
+            "image generation"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/everart.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-everart"
+            ],
+            "env": {
+                "EVERART_API_KEY": "YOUR_API_KEY_HERE"
+            }
+        }
+    },
+    {
+        "id": "filesystem",
+        "title": "Filesystem",
+        "description": "Provides a server that allows LLMs to read and write files to the filesystem.",
+        "tags": [
+            "read files",
+            "write files"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/filesystem.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "$ALLOWED_DIRS|path$"
+            ]
+        }
+    },
+    {
+        "id": "git",
+        "title": "Git",
+        "description": "For Git repository interaction and automation. This server provides tools to read, search, and manipulate Git repositories",
+        "tags": [
+            "git"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/git.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-git",
+                "--repository",
+                "$REPO_PATH|path$"
+            ]
+        }
+    },
+    {
+        "id": "sequential-thinking",
+        "title": "Sequential Thinking",
+        "description": "provides a tool for dynamic and reflective problem-solving through a structured thinking process.",
+        "tags": [
+            "thinking"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/sequential-thinking.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        }
+    },
+    {
+        "id": "slack",
+        "title": "Slack",
+        "description": "Enabling Claude to interact with Slack workspaces.",
+        "tags": [
+            "slack"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/slack.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-slack"
+            ],
+            "env": {
+                "SLACK_BOT_TOKEN": "xoxb-your-bot-token",
+                "SLACK_TEAM_ID": "T01234567"
+            }
+        }
+    },
+    {
+        "id": "memory",
+        "title": "Knowledge Graph Memory",
+        "description": "This lets Claude remember information about the user across chats.",
+        "tags": [
+            "memory"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/memory.svg",
+        "publishDate": "2024-12-08T18:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ]
+        }
+    }
+]
