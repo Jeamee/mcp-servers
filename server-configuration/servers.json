@@ -2,7 +2,7 @@
     {
         "id": "brave-search",
         "title": "Brave Search",
-        "description": "Integrates the Brave Search API, providing both web and local search capabilities. Features include web search with pagination and filtering, local search for businesses and services, flexible filtering options, and smart fallbacks.",
+        "description": "Web and local search using Brave's Search API",
         "tags": [
             "web search",
             "local search"
@@ -25,7 +25,7 @@
     {
         "id": "puppeteer",
         "title": "Puppeteer",
-        "description": "Provides browser automation capabilities using Puppeteer. This server enables LLMs to interact with web pages, take screenshots, and execute JavaScript in a real browser environment.",
+        "description": "Browser automation and web scraping",
         "tags": [
             "browser automation",
             "web scraping"
@@ -45,7 +45,7 @@
     {
         "id": "fetch",
         "title": "Fetch Webpage",
-        "description": "Enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.",
+        "description": "Web content fetching and conversion for efficient LLM usage",
         "tags": [
             "web scraping"
         ],
@@ -63,7 +63,7 @@
     {
         "id": "everart",
         "title": "EverArt",
-        "description": "Image generation server for Claude Desktop using EverArt's API.",
+        "description": "AI image generation using various models",
         "tags": [
             "image generation"
         ],
@@ -85,10 +85,9 @@
     {
         "id": "filesystem",
         "title": "Filesystem",
-        "description": "Provides a server that allows LLMs to read and write files to the filesystem.",
+        "description": "Secure file operations with configurable access controls",
         "tags": [
-            "read files",
-            "write files"
+            "file operation"
         ],
         "creator": "Official",
         "logoUrl": "https://app.mcphub.net/server-configuration/image/filesystem.svg",
@@ -106,7 +105,7 @@
     {
         "id": "git",
         "title": "Git",
-        "description": "For Git repository interaction and automation. This server provides tools to read, search, and manipulate Git repositories",
+        "description": "Tools to read, search, and manipulate Git repositories",
         "tags": [
             "git"
         ],
@@ -126,7 +125,7 @@
     {
         "id": "sequential-thinking",
         "title": "Sequential Thinking",
-        "description": "provides a tool for dynamic and reflective problem-solving through a structured thinking process.",
+        "description": "Dynamic and reflective problem-solving through thought sequences",
         "tags": [
             "thinking"
         ],
@@ -145,7 +144,7 @@
     {
         "id": "slack",
         "title": "Slack",
-        "description": "Enabling Claude to interact with Slack workspaces.",
+        "description": "Channel management and messaging capabilities",
         "tags": [
             "slack"
         ],
@@ -168,7 +167,7 @@
     {
         "id": "memory",
         "title": "Knowledge Graph Memory",
-        "description": "This lets Claude remember information about the user across chats.",
+        "description": "Knowledge graph-based persistent memory system",
         "tags": [
             "memory"
         ],
@@ -183,5 +182,242 @@
                 "@modelcontextprotocol/server-memory"
             ]
         }
+    },
+    {
+        "id": "time",
+        "title": "Timezone",
+        "description": "Time and timezone conversion capabilities",
+        "tags": [
+            "time"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/time.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-time"
+            ]
+        }
+    },
+    {
+        "id": "google-maps",
+        "title": "Google Maps",
+        "description": "Location services, directions, and place details",
+        "tags": [
+            "location"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/google-maps.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-google-maps"
+            ],
+            "env": {
+                "GOOGLE_MAPS_API_KEY": "<YOUR_API_KEY>"
+            }
+        }
+    },
+    {
+        "id": "aws-kb-retrieval",
+        "title": "AWS KB Retrieval",
+        "description": "Retrieval from AWS Knowledge Base using Bedrock Agent Runtime",
+        "tags": [
+            "knowledge base"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/aws-kb-retrieval.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-aws-kb-retrieval"
+            ],
+            "env": {
+                "AWS_ACCESS_KEY_ID": "<YOUR_ACCESS_KEY_ID>",
+                "AWS_SECRET_ACCESS_KEY": "<YOUR_SECRET_ACCESS_KEY>",
+                "AWS_REGION": "<YOUR_REGION>"
+            }
+        }
+    },
+    {
+        "id": "github",
+        "title": "Github",
+        "description": "Repository management, file operations, and GitHub API integration",
+        "tags": [
+            "git",
+            "github"
+        ],
+        "creator": "Official",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/github.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-github"
+            ],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_GITHUB_TOKEN>"
+            }
+        }
+    },
+    {
+        "id": "todoist",
+        "title": "Todoist",
+        "description": "Interact with Todoist to manage your tasks.",
+        "tags": [
+            "todoist"
+        ],
+        "creator": "abhiz123",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/todoist.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@abhiz123/todoist-mcp-server"
+            ],
+            "env": {
+                "TODOIST_API_TOKEN": "your_api_token_here"
+            },
+            "guide": "Getting a Todoist API Token\nLog in to your Todoist account\nNavigate to Settings → Integrations\nFind your API token under \"Developer\""
+        },
+        "documentation": "## Example Usage\n\n### Creating Tasks\n```\n\"Create task 'Team Meeting'\"\n\"Add task 'Review PR' due tomorrow at 2pm\"\n\"Create high priority task 'Fix bug' with description 'Critical performance issue'\"\n```\n\n### Getting Tasks\n```\n\"Show all my tasks\"\n\"List tasks due today\"\n\"Get high priority tasks\"\n\"Show tasks due this week\"\n```\n\n### Updating Tasks\n```\n\"Update documentation task to be due next week\"\n\"Change priority of bug fix task to urgent\"\n\"Add description to team meeting task\"\n```\n\n### Completing Tasks\n```\n\"Mark the PR review task as complete\"\n\"Complete the documentation task\"\n```\n\n### Deleting Tasks\n```\n\"Delete the PR review task\"\n\"Remove meeting prep task\"\n```"
+    },
+    {
+        "id": "linear",
+        "title": "Linear",
+        "description": "Allows LLM to interact with Linear's API for project management, including searching, creating, and updating issues.",
+        "tags": [
+            "linear"
+        ],
+        "creator": "jerhadf",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/linear.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-linear"
+            ],
+            "env": {
+                "LINEAR_API_KEY": "your_api_key_here"
+            },
+            "guide": "Create or get a Linear API key for your team: [https://linear.app/YOUR-TEAM/settings/api](https://linear.app/YOUR-TEAM/settings/api)"
+        },
+        "documentation": "## Usage examples\n\nSome example prompts you can use with Claude Desktop to interact with Linear:\n\n1. \"Show me all my high-priority issues\" \u2192 execute the `search_issues` tool and/or `linear-user:///{userId}/assigned` to find issues assigned to you with priority 1\n\n2. \"Based on what I've told you about this bug already, make a bug report for the authentication system\" \u2192 use `create_issue` to create a new high-priority issue with appropriate details and status tracking\n\n3. \"Find all in progress frontend tasks\" \u2192 use `search_issues` to locate frontend-related issues with in progress task\n\n4. \"Give me a summary of recent updates on the issues for mobile app development\" \u2192 use `search_issues` to identify the relevant issue(s), then `linear-issue:///{issueId}` fetch the issue details and show recent activity and comments\n\n5. \"What's the current workload for the mobile team?\" \u2192 combine `linear-team:///{teamId}/issues` and `search_issues` to analyze issue distribution and priorities across the mobile team"
+    },
+    {
+        "id": "mcp-pandoc",
+        "title": "Pandoc",
+        "description": "MCP server for seamless document format conversion using Pandoc, supporting Markdown, HTML, and plain text, with other formats like PDF, csv and docx in development.",
+        "tags": [
+            "file operation"
+        ],
+        "creator": "vivekVells",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/pandoc.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "uvx",
+            "args": [
+                "mcp-pandoc"
+            ]
+        }
+    },
+    {
+        "id": "kubernetes",
+        "title": "Kubernetes",
+        "description": "Connect to Kubernetes cluster and manage pods, deployments, and services.",
+        "tags": [
+            "kubernetes"
+        ],
+        "creator": "Flux159",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/kubernetes.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "mcp-server-kubernetes"
+            ]
+        }
+    },
+    {
+        "id": "windows-cli",
+        "title": "Windows CLI",
+        "description": "MCP server for secure command-line interactions on Windows systems, enabling controlled access to PowerShell, CMD, and Git Bash shells.",
+        "tags": [
+            "windows"
+        ],
+        "creator": "SimonB97",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/windows-cli.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@simonb97/server-win-cli"
+            ]
+        }
+    },
+    {
+        "id": "twitter-mcp",
+        "title": "X(Twitter)",
+        "description": "Interact with twitter API. Post tweets and search for tweets by query.",
+        "tags": [
+            "twitter"
+        ],
+        "creator": "EnesCinr",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/twitter-mcp.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@enescinar/twitter-mcp"
+            ],
+            "env": {
+                "API_KEY": "your_api_key_here",
+                "API_SECRET_KEY": "your_api_secret_key_here",
+                "ACCESS_TOKEN": "your_access_token_here",
+                "ACCESS_TOKEN_SECRET": "your_access_token_secret_here"
+            },
+            "guide": "Create a Twitter Developer account and get your API keys from [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard)"
+        },
+        "documentation": "## Example Usage\n\nTry asking Claude:\n- \"Can you post a tweet saying 'Hello from Claude!'\"\n- \"Can you search for tweets about Claude AI?\" "
+    },
+    {
+        "id": "youtube-transcript",
+        "title": "YouTube Transcript",
+        "description": "Retrieval of transcripts from YouTube videos",
+        "tags": [
+            "youtube"
+        ],
+        "creator": "kimtaeyoon83",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/youtube-transcript.svg",
+        "publishDate": "2024-12-13T12:00:00Z",
+        "rating": 5,
+        "commandInfo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@kimtaeyoon83/mcp-server-youtube-transcript"
+            ]
+        },
+        "documentation": "Tell Claude: `chat: https://youtu.be/ODaHJzOyVCQ?si=aXkJgso96Deri0aB Extract subtitles`"
     }
 ]
