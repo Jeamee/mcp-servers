@@ -487,7 +487,7 @@
             "browser automation"
         ],
         "creator": "ExecuteAutomation",
-        "logoUrl": "https://app.mcphub.net/server-configuration/image/exa.png",
+        "logoUrl": "https://app.mcphub.net/server-configuration/image/playwright.png",
         "publishDate": "2024-12-28T12:00:00Z",
         "rating": 5,
         "commandInfo": {
