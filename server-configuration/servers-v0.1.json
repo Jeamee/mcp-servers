@@ -498,5 +498,28 @@
             ]
         },
         "documentation": ""
-    }
+    },
+    {
+      "id": "contentful",
+      "title": "Contentful",
+      "description": "An MCP server implementation that integrates with Contentful's Content Management API, providing comprehensive content management capabilities.",
+      "tags": [
+          "content management", "cms", "contentful"
+      ],
+      "creator": "Ivo Toby (Contentful)",
+      "logoUrl": "https://images.ctfassets.net/jtqsy5pye0zd/6wNuQ2xMvbw134rccObi0q/bf61badc6d6d9780609e541713f0bba6/Contentful_Logo_2.5_Dark.svg?w=256&q=100",
+      "publishDate": "2024-12-22T12:00:00Z",
+      "rating": 5,
+      "commandInfo": {
+          "command": "npx",
+          "args": [
+              "-y",
+              "@ivotoby/contentful-management-mcp-server"
+          ],
+          "env": {
+              "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN": "your_management_api_key_here"
+          }
+      },
+      "documentation": "# Manage your content from agents\n\nYou can use the Contentful MCP server to manage your content from your agents, like Claude Desktop. Here are some examples of what you can do:\n\n- Create a new entry in a content type\n- Update an existing entry\n- Create content type and populate it based on other content, and much much more."
+  }
 ]
